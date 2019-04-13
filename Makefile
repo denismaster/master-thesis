@@ -22,7 +22,6 @@ clean:
 docker:
 	docker build -t docker-latex .
 	docker run -ti -v ${PWD}:/master-thesis:Z docker-latex bash -c "make build && make clean"
-	docker run -ti -v ${PWD}:/master-thesis:Z docker-latex bash -c "make -C presentation && make -C presentation clean"
 
 pres:
 	make -C presentation run

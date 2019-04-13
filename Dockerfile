@@ -25,10 +25,6 @@ RUN apt update && \
 # Times New Roman and other fonts
 RUN apt install -y --reinstall ttf-mscorefonts-installer && \
     wget -O /usr/share/fonts/xits-math.otf https://github.com/khaledhosny/xits-math/raw/master/XITSMath-Regular.otf && \
-    wget https://www.paratype.com/api/editions/ofl/download/52212 && \
-    wget https://www.paratype.com/api/editions/ofl/download/52218 && \
-    unzip PTSansOFL.zip -d /usr/share/fonts/ && unzip PTMono.zip -d /usr/share/fonts/ && \
-    rm -f PTSansOFL.zip PTMono.zip && \
     fc-cache -f -v
 
 VOLUME $DIR
