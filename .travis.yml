@@ -13,6 +13,5 @@ deploy:
   api_key: $TOKEN
   file:
     - "master-thesis.pdf"
-    - "presentation/presentation.pdf"
   name: Build $(date +'%d.%m.%Y %R')
   skip-cleanup: true
