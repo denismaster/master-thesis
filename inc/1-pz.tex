@@ -210,9 +210,10 @@
 Сравнение критериев проводилось по шкале относительной важности согласно с таблицей \ref{crit_scale}.
 
 \begin{table}[H]
+    \centering
     \caption{Матрица парных сравнений для критериев}\label{crit_compare}
-     \begin{tabular}{|c|c|c|c|c|c|c|}
-    %\hline \# & $q_1$ & $q_2$ & $q_3$ & $q_4$ & $W$ & $W$ \\
+    \begin{tabular}{|c|c|c|c|c|c|c|}
+    \hline \# & $q_1$ & $q_2$ & $q_3$ & $q_4$ & $W$ & $\abs{W}$ \\
     \hline $q_1$ & 1 & 1 & 4 & 5 & 0.091 & 0.091 \\
     \hline $q_2$ & 1 & 1 & 3 & 3 & 0.100 & 0.103 \\
     \hline $q_3$ & $1/4$ & $1/3$ & 1 & 2 & 0.279 & 0.280 \\
@@ -220,7 +221,7 @@
     \hline \multicolumn{5}{|c|}{Сумма} & 0.096 & 1 \\
     \hline
     \end{tabular}
-  \end{table}
+\end{table}
 
 \begin{table}[H]
   \caption{Оценка критериев}\label{crit_scale}
@@ -251,53 +252,57 @@
 Далее рассчитаем значения функции принадлежности.
 Матрицы парных сравнений представлены в таблицах \ref{crit_q1}-\ref{crit_q4}.
 
-% \begin{table}[H]
-%     \caption{Матрица парных сравнений для альтернатив по критерию q_1}\label{crit_q1}
-%     \begin{tabular}{|p|p|}
-%     %\hline \# & $v_1$ & $v_2$ & $v_3$ & $\mu$ & $\mu$ & $W_{\mu}$ \\
-%     \hline $v_1$ & 1 & $1/4$ & 5 & 0.160 & 0.162 & 0.847 \\
-%     \hline $v_2$ & 4 & 1 & 7 &  0.083 & 0.084 & 0.798\\
-%     \hline $v_3$ & $1/5$ & $1/7$ & 1 & 0.745 & 0.754 & 0.975 \\
-%     \hline \multicolumn{4}{|c|}{Сумма} & 0.979 & \multicolumn{2}{|c|}{1} \\
-%     \hline
-%     \end{tabular}
-% \end{table}
+\begin{table}[H]
+    \centering
+    \caption{Матрица парных сравнений для альтернатив по критерию q_1}\label{crit_q1}
+    \begin{tabular}{|c|c|c|c|c|c|c|}
+    \hline \# & $v_1$ & $v_2$ & $v_3$ & $\mu$ & $\mu$ & $W_{\mu}$ \\
+    \hline $v_1$ & 1 & $1/4$ & 5 & 0.160 & 0.162 & 0.847 \\
+    \hline $v_2$ & 4 & 1 & 7 &  0.083 & 0.084 & 0.798\\
+    \hline $v_3$ & $1/5$ & $1/7$ & 1 & 0.745 & 0.754 & 0.975 \\
+    \hline \multicolumn{4}{|c|}{Сумма} & 0.979 & \multicolumn{2}{|c|}{1} \\
+    \hline
+    \end{tabular}
+\end{table}
 
-% \begin{table}[H]
-%     \caption{Матрица парных сравнений для альтернатив по критерию q_2}\label{crit_q2}
-%     \begin{tabular}{|p|p|}
-%     %\hline \# & $v_1$ & $v_2$ & $v_3$ & $\mu$ & $\mu$ & $W_{\mu}$ \\
-%     \hline $v_1$ & 1 & $1/4$ & 5 & 0.160 & 0.162 & 0.847 \\
-%     \hline $v_2$ & 4 & 1 & 7 &  0.083 & 0.084 & 0.798\\
-%     \hline $v_3$ & $1/5$ & $1/7$ & 1 & 0.745 & 0.754 & 0.975 \\
-%     \hline \multicolumn{4}{|c|}{Сумма} & 0.979 & \multicolumn{2}{|c|}{1} \\
-%     \hline
-%     \end{tabular}
-% \end{table}
+\begin{table}[H]
+    \centering
+    \caption{Матрица парных сравнений для альтернатив по критерию q_2}\label{crit_q2}
+    \begin{tabular}{|c|c|c|c|c|c|c|}
+    \hline \# & $v_1$ & $v_2$ & $v_3$ & $\mu$ & $\mu$ & $W_{\mu}$ \\
+    \hline $v_1$ & 1 & $1/4$ & 5 & 0.160 & 0.162 & 0.847 \\
+    \hline $v_2$ & 4 & 1 & 7 &  0.083 & 0.084 & 0.798\\
+    \hline $v_3$ & $1/5$ & $1/7$ & 1 & 0.745 & 0.754 & 0.975 \\
+    \hline \multicolumn{4}{|c|}{Сумма} & 0.979 & \multicolumn{2}{|c|}{1} \\
+    \hline
+    \end{tabular}
+\end{table}
 
-% \begin{table}[H]
-%     \caption{Матрица парных сравнений для альтернатив по критерию q_3}\label{crit_q3}
-%     \begin{tabular}{|p|p|}
-%    % \hline \# & $v_1$ & $v_2$ & $v_3$ & $\mu$ & $\mu$ & $W_{\mu}$ \\
-%     \hline $v_1$ & 1 & $1/4$ & 5 & 0.160 & 0.162 & 0.847 \\
-%     \hline $v_2$ & 4 & 1 & 7 &  0.083 & 0.084 & 0.798\\
-%     \hline $v_3$ & $1/5$ & $1/7$ & 1 & 0.745 & 0.754 & 0.975 \\
-%     \hline \multicolumn{4}{|c|}{Сумма} & 0.979 & \multicolumn{2}{|c|}{1} \\
-%     \hline
-%     \end{tabular}
-% \end{table}
+\begin{table}[H]
+    \centering
+    \caption{Матрица парных сравнений для альтернатив по критерию q_3}\label{crit_q3}
+    \begin{tabular}{|c|c|c|c|c|c|c|}
+    \hline \# & $v_1$ & $v_2$ & $v_3$ & $\mu$ & $\mu$ & $W_{\mu}$ \\
+    \hline $v_1$ & 1 & $1/4$ & 5 & 0.160 & 0.162 & 0.847 \\
+    \hline $v_2$ & 4 & 1 & 7 &  0.083 & 0.084 & 0.798\\
+    \hline $v_3$ & $1/5$ & $1/7$ & 1 & 0.745 & 0.754 & 0.975 \\
+    \hline \multicolumn{4}{|c|}{Сумма} & 0.979 & \multicolumn{2}{|c|}{1} \\
+    \hline
+    \end{tabular}
+\end{table}
 
-% \begin{table}[H]
-%     \caption{Матрица парных сравнений для альтернатив по критерию q_4}\label{crit_q4}
-%     \begin{tabular}{|p|p|}
-%     %\hline \# & $v_1$ & $v_2$ & $v_3$ & $\mu$ & $\mu$ & $W_{\mu}$ \\
-%     \hline $v_1$ & 1 & $1/4$ & 5 & 0.160 & 0.162 & 0.847 \\
-%     \hline $v_2$ & 4 & 1 & 7 &  0.083 & 0.084 & 0.798\\
-%     \hline $v_3$ & $1/5$ & $1/7$ & 1 & 0.745 & 0.754 & 0.975 \\
-%     \hline \multicolumn{4}{|c|}{Сумма} & 0.979 & \multicolumn{2}{|c|}{1} \\
-%     \hline
-%     \end{tabular}
-% \end{table}
+\begin{table}[H]
+    \centering
+    \caption{Матрица парных сравнений для альтернатив по критерию q_4}\label{crit_q4}
+    \begin{tabular}{|c|c|c|c|c|c|c|}
+    \hline \# & $v_1$ & $v_2$ & $v_3$ & $\mu$ & $\mu$ & $W_{\mu}$ \\
+    \hline $v_1$ & 1 & $1/4$ & 5 & 0.160 & 0.162 & 0.847 \\
+    \hline $v_2$ & 4 & 1 & 7 &  0.083 & 0.084 & 0.798\\
+    \hline $v_3$ & $1/5$ & $1/7$ & 1 & 0.745 & 0.754 & 0.975 \\
+    \hline \multicolumn{4}{|c|}{Сумма} & 0.979 & \multicolumn{2}{|c|}{1} \\
+    \hline
+    \end{tabular}
+\end{table}
 
 Исходя из полученных матриц, определим значения нечетких множеств:
 
