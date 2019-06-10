@@ -134,6 +134,11 @@
 %     \cfoot{\textrm{\thepage}}
 % }
 
+% Подсчет числа таблиц и рисунков
+\usepackage[figure,table]{totalcount}
+
+
+
 % Формат подрисуночных надписей
 \RequirePackage{caption}
 \DeclareCaptionLabelSeparator{defffis}{ -- } % Разделитель
@@ -156,6 +161,19 @@
         \caption{#3} \label{#4}
     \end{figure}
 }
+
+\newcommand{\addimgrotated}[4]{ % Добавить рисунок повернутым на 90 градусов 
+    \begin{landscape}
+        \begin{figure}[!h]
+           \centering
+            %\includegraphics[width=1.0\textwidth]{Image.eps}
+            \includegraphics[height=#2\textheight]{#1}
+            \caption{#3}
+            \label{#4}
+        \end{figure}
+    \end{landscape}
+}
+
 \newcommand{\addtwoimghere}[5]{ % Вставка двух рисунков
     \begin{figure}[H]
         \centering
