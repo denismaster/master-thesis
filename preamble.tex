@@ -214,6 +214,13 @@
     \addcontentsline{toc}{section}{#1}
 }
 
+% Секции без номеров (введение, заключение...), вместо subsection*{}
+\newcommand{\anonsubsection}[1]{
+    \phantomsection % Корректный переход по ссылкам в содержании
+    \paragraph{\centerline{{#1}}\vspace{1em}}
+    \addcontentsline{toc}{subsection}{#1}
+}
+
 % Секция для аннотации (она не включается в содержание)
 \newcommand{\annotation}[1]{
     \paragraph{\centerline{{#1}}\vspace{1em}}
