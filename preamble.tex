@@ -217,7 +217,9 @@
 % Секции без номеров (введение, заключение...), вместо subsection*{}
 \newcommand{\anonsubsection}[1]{
     \phantomsection % Корректный переход по ссылкам в содержании
-    \paragraph{\centerline{{#1}}\vspace{1em}}
+    \begin{center}
+        {#1}
+    \end{center}
     \addcontentsline{toc}{subsection}{#1}
 }
 
