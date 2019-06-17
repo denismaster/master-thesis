@@ -162,17 +162,15 @@
     \end{figure}
 }
 
-\usepackage{lscape}
+\usepackage{rotating}
 \newcommand{\addimgrotated}[4]{ % Добавить рисунок повернутым на 90 градусов 
-    \begin{landscape}
-        \begin{figure}
+        \begin{sidewaysfigure}
            \centering
             %\includegraphics[width=1.0\textwidth]{Image.eps}
             \includegraphics[height=#2\textheight]{#1}
             \caption{#3}
-            \label{#4}
-        \end{figure}
-    \end{landscape}
+            \label{#4}login
+        \end{sidewaysfigure}
 }
 
 \newcommand{\addtwoimghere}[5]{ % Вставка двух рисунков
