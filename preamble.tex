@@ -131,10 +131,14 @@
 \setlength{\headheight}{17pt}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
-% \fancypagestyle{plain}{
-%     \fancyhf{}
-%     \cfoot{\textrm{\thepage}}
-% }
+\fancypagestyle{plain}{
+    \lhead{}
+    \chead{\thepage}
+    \rhead{}
+    \lfoot{}
+    \cfoot{}
+    \rfoot{}
+}
 
 % Подсчет числа таблиц и рисунков
 \usepackage[figure,table]{totalcount}
