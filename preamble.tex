@@ -122,18 +122,17 @@
 % Нумерация страниц посередине сверху
 \usepackage{fancyhdr}
 \pagestyle{fancy}
-\fancyhf{}
-\fancyhf[ch]{\thepage}
+
 \cfoot{} % get rid of the page number
 \fancyheadoffset{0mm}
 \fancyfootoffset{0mm}
 \setlength{\headheight}{17pt}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
-% \fancypagestyle{plain}{
-%     \fancyhf{}
-%     \cfoot{\textrm{\thepage}}
-% }
+\fancypagestyle{plain}{
+    \fancyhf[ch]{\thepage}
+    \cfoot{}
+}
 
 % Подсчет числа таблиц и рисунков
 \usepackage[figure,table]{totalcount}
